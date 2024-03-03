@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /*"Poppins"*/
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+
+
+/*   --HEADER--   */
+header {
+    width: 85%;
+
+    margin: 20px auto;
+
+    display: flex;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background-color: #F7F8F8;
+}
+
+header img {width: 180px;}
+/*   --HEADER--   */
+
+
+
+/*   --_main--   */
+section#_main {
+    margin: 0px 125px 0px 125px;
+    padding: 50px 10px 25px 10px;
+
+    display: flex;
+    align-items: center;
+}
+#_main h1 {
+    width: 45%;
+
+    font: normal bold 90px / 100px 'Poppins';
+}
+
+span {
+    color: #50B37D;
+}
+
+div#_texts {
+    width: 45%;
+    margin-left: auto;
+
+    /*padding-right: 125px;*/
+
+    display: block;
+}
+
+#_texts p {
+    margin-bottom: 25px;
+
+    font: normal 18px 'Poppins';
+    text-align: justify;
+}
+
+#_texts input {
+    padding: 10px;
+
+    color: white;
+
+    background-color: #50B37D;
+}
+#_texts input::placeholder {color: white;}
+#_texts input:hover {background-color: #409164;}
+#_texts input:focus {background-color: #409164;}
+
+#_texts input[type="submit"] {
+    cursor: pointer;
+}
+#_texts input[type="submit"]:active {background-color: #8ecfab;}
+
+
+@media screen and (max-width: 1307px) {
+    #_main h1 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 1277px) {
+    section#_main {
+        margin: 0px 60px 0px 60px;
+    }
+
+    #_main p {
+        font-size: 16px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 947px) {
+    section#_main {
+        margin: 0px 20px 0px 20px;
+    }
+
+    #_main h1 {
+        width: 48%;
+
+        font: normal bold 43px / 65px 'Poppins';
+    }
+
+    div#_texts {
+        width: 48%;
+    }
+
+    #_texts p {
+        font-size: 14px;
+    }
+
+    #_texts input {
+        padding-left: 5px;
+        padding-right: 5px;
+
+        font-size: 10px;
+        text-align: center;
+    }
+    
+    #_texts input[type="number"] {
+        width: 48%;
+        padding-left: 5px;
+        padding-right: 0px;
+    }
+}
+/*   --_main--   */
+
+
+
+/*   --_data--   */
+section#_comparison {
+    width: 70%;
+    max-width: 500px;
+
+    margin: 100px auto;
+
+    padding: 30px 75px 30px 75px;
+
+    border-radius: 5px;
+
+    display: none;
+    
+    background-color: #f7f8f8;
+}
+
+div#_other-h2 {
+    width: 40%;
+
+    margin-left: auto;
+
+    text-align: center;
+}
+div#_our-h2 {
+    width: 40%;
+
+    margin-right: auto;
+
+    text-align: center;
+}
+
+#_titles h2 {
+    font-size: 20px;
+}
+
+div#_titles {
+    display: flex;
+    align-items: center;
+    gap: 125px;
+}
+
+div#_data {
+    display: flex;
+}
+
+#_titles p._porcentage {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.500);
+}
+
+#_other-num {
+    width: 40%;
+
+    margin-left: auto;
+
+    text-align: right;
+}
+
+#_our-num {
+    width: 40%;
+
+    margin-right: auto;
+
+    text-align: left;
+}
+
+#_year {
+    margin-top: 30px;
+
+    padding: 0 20px 0 20px;
+
+    color: rgba(0, 0, 0, 0.500);
+    text-wrap: nowrap;
+}
+
+#_year p {
+    
+    margin-bottom: 5px;
+    margin-left: auto;
+
+    padding: 0px 5px 0px 5px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+._first-num {
+    margin-top: 30px;
+    margin-bottom: 5px;
+
+    padding: 0px 5px 0px 5px;
+
+    border-radius: 10px;
+}
+
+._other-num {
+    width: fit-content;
+    
+    margin-bottom: 5px;
+
+    padding: 0px 5px 0px 5px;
+
+    border-radius: 10px;
+
+    margin-left: auto;
+}
+
+._our-num {
+    width: fit-content;
+
+    margin-bottom: 5px;
+
+    padding: 0px 5px 0px 5px;
+
+    border-radius: 10px;
+}
+
+#_final-message {
+    padding-top: 45px;
+
+    color: rgba(0, 0, 0, 0.500);
+    text-align: center;
+}
+
+@media screen and (max-width: 731px) {
+    #_titles h2 {
+        font-size: 15px;
+    }
+}
+/*   --_data--   */

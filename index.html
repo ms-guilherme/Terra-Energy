@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra-Energy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header><img src="images/terra-energy-logo.png" alt="Terra Energy logo"></header>
+
+    <section id="_main">
+
+        <h1>Check the <span>Benefits</span> of Our Offer</h1>
+
+        <div id="_texts">
+            <p>Compare our percentage increase with the competition.</p>
+            <p>Check it now! Tell us the cost of your light bill and we will compare the price growth for you:</p>
+            <input type="number" id="_initial-value" placeholder="Initial Light Price..." min="0">
+            <input type="submit" value="COMPARE" onclick="_Compare()">
+        </div> <!--_texts-->
+        
+    </section> <!--  _main  -->
+
+    <section id="_comparison">
+
+        <div id="_titles">
+            <div id="_other-h2">
+                <h2>FPL and Others Increase</h2>
+                <p class="_porcentage">at +12% by year</p>
+            </div> <!--_other-h2-->
+
+            <div id="_our-h2">
+                <h2>Terra Increase</h2>
+                <p class="_porcentage">at 1.9% by year</p>
+            </div> <!--_our-h2-->
+        </div> <!--_titles-->
+
+        <div id="_data">
+
+            <div id="_other-num"> <!--...--> </div>
+            <div id="_year"> <!--...--> </div>
+            <div id="_our-num"> <!--...--> </div>
+
+        </div> <!--_data-->
+        <p id="_final-message"></p>
+
+    </section> <!--  _comparison  -->
+
+    <script src="script.js"></script>
+</body>
+</html>
