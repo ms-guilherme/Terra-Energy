@@ -85,7 +85,6 @@ div#_texts {
 
 @keyframes blink {
     0% {background-color: #50B37D;}
-    50% {background-color: #94e7b9;}
     50% {background-color: #6ccf99;}
 }
 
