@@ -1,6 +1,16 @@
 function _Compare() {
     let section = document.getElementById("_comparison");
     section.style.display = "block";
+
+
+    let rect = section.getBoundingClientRect();
+    let scroll_destination = window.scrollY + rect.top + rect.height/2;
+
+    window.scrollTo({
+        top: scroll_destination,
+        behavior: "smooth"
+    })
+
     
     let our = document.getElementById("_our-num");
     let other = document.getElementById("_other-num");
@@ -33,6 +43,7 @@ function _Compare() {
     let alpha_other = 6;
     for(let i = 1; i < 15; i++) {
         other_num = other_num * (1.11 + i/100);
+        /*other_num = other_num * 1.12;*/
         alpha_other += 4;
         other.innerHTML += `<p class = "_other-num" style="background-color: #b35050${alpha_other};">$${other_num.toFixed(2)}</p>`;
     }
