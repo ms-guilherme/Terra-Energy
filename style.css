@@ -17,12 +17,15 @@ header {
 
     display: flex;
     justify-content: center;
+    vertical-align: auto;
 
     border-radius: 15px;
+    box-shadow: 4px 6px 8px -6px rgba(0, 0, 0, 0.200);
 
     background-color: #F7F8F8;
 }
 
+header a {display: flex;}
 header img {width: 180px;}
 /*   --HEADER--   */
 
@@ -37,9 +40,10 @@ section#_main {
     align-items: center;
 }
 #_main h1 {
-    width: 45%;
+    width: 53%;
 
     font: normal bold 90px / 100px 'Poppins';
+    text-align: left;
 }
 
 span {
@@ -59,10 +63,11 @@ div#_texts {
     margin-bottom: 25px;
 
     font: normal 18px 'Poppins';
-    text-align: justify;
+    text-align: left;
 }
 
 #_texts input {
+    margin-bottom: 10px;
     padding: 10px;
 
     color: white;
@@ -78,55 +83,54 @@ div#_texts {
 }
 #_texts input[type="submit"]:active {background-color: #8ecfab;}
 
-
-@media screen and (max-width: 1307px) {
-    #_main h1 {
-        font-size: 70px;
-    }
+@keyframes blink {
+    0% {background-color: #50B37D;}
+    50% {background-color: #94e7b9;}
+    50% {background-color: #6ccf99;}
 }
 
-@media screen and (max-width: 1277px) {
-    section#_main {
-        margin: 0px 60px 0px 60px;
-    }
+#_texts input[type="number"]:placeholder-shown {animation: blink 1.5s infinite;}
 
-    #_main p {
-        font-size: 16px;
-        text-align: left;
-    }
+
+@media screen and (max-width: 1167px) {
+    section#_main {margin: 0px;}
+
+    div#_texts {padding-right: 10px;}
 }
 
-@media screen and (max-width: 947px) {
-    section#_main {
-        margin: 0px 20px 0px 20px;
+@media screen and (max-width: 1047px) {
+    #_main h1 {width: 60%;}
+
+    div#_texts {width: 30%;}
+}
+
+@media screen and (max-width: 846px) {
+    header {
+        width: 100%;
+
+        margin: 0;
+
+        border-radius: 0;
+
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.200);
     }
+    #_main {flex-wrap: wrap;}
 
     #_main h1 {
-        width: 48%;
-
-        font: normal bold 43px / 65px 'Poppins';
+        width: 100%;
     }
 
     div#_texts {
-        width: 48%;
+        width: 100%;
+        
+        padding-top: 10px;
     }
+    #_texts p {margin: 0px 0px 20px 0px;}
+}
 
-    #_texts p {
-        font-size: 14px;
-    }
-
-    #_texts input {
-        padding-left: 5px;
-        padding-right: 5px;
-
-        font-size: 10px;
-        text-align: center;
-    }
-    
-    #_texts input[type="number"] {
-        width: 48%;
-        padding-left: 5px;
-        padding-right: 0px;
+@media screen and (max-width: 522px) {
+    #_main h1 {
+        font-size: 80px;
     }
 }
 /*   --_main--   */
@@ -256,6 +260,9 @@ div#_data {
 
     color: rgba(0, 0, 0, 0.500);
     text-align: center;
+}
+#_final-message a {
+    color: hwb(271 5% 70%);
 }
 
 @media screen and (max-width: 731px) {
